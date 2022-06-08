@@ -1,0 +1,30 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/condicionales";
+
+header{
+    @include grid;
+
+    
+}
+body{
+    @include medidas (100%, 800%);
+    height: 800%;
+    width: 100%;
+    background-image: url("../img/Musculacion.jpg");
+    background-color: rgb(72, 25, 216);
+}
+h1{
+    @include condicion (black);
+}
+h2{
+    @include h2 (text-align);
+
+}
+
+h3{
+    @include h3;
+}
+div{
+    @include div; 
+}

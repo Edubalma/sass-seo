@@ -1,0 +1,39 @@
+@mixin condicion ($colores){
+    background-color: $colores;
+
+    @if $colores == div{
+        background-color: red;
+        color: black;
+    } @else {
+        color:red;
+    }
+    
+}
+
+@mixin h2 ($colores){
+    text-align: center;
+    background-color: aquamarine;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 5% solid black;
+    border-radius: 10px;
+}
+
+@mixin h3 {
+    text-align: center;
+    color: blue;
+    font-size: 2rem;
+    
+}
+
+@mixin div {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footerSt{
+    font-family:'Times New Roman', Times, bold;
+    text-align: center;
+    font-size: 1rem;
+    
+}
